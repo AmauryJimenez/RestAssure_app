@@ -24,7 +24,7 @@ public class restAssureTest {
         System.out.println("content type " + response.then().extract().contentType());
         System.out.println("status code " + response.then().extract().statusCode());
         // First get the JsonPath object instance from the Response interface
-        JsonPath jsonPathEvaluator = response.jsonPath();
+        JsonPath jsonPathEvaluator = response.jsonPath(); 
 
         List<String> charactersList = jsonPathEvaluator.get("characters");
         assertEquals(charactersList.size(), 18);
